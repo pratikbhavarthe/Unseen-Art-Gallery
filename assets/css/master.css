@@ -58,3 +58,71 @@ header {
     -ms-flex-align: center;
     align-items: center;
 }
+
+header .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;    
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.menu-wrapper .last:nth-child() {
+    text-transform: uppercase;
+}
+
+.code {
+    text-transform: uppercase;
+}
+
+header .menu-wrapper .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.logo img {
+    height: 1rem;
+}
+
+.button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-box: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: var(--gap);
+    margin-right: var(--gap);
+    cursor: pointer;
+}
+
+.button::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #fe0303;
+    border: calc(var(--gap) / 5) solid #fe0303;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    margin-right: calc(var(--gap) / 3);
+}
+
+.active::before {
+    background-color: black;
+}
+
+
+
