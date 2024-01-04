@@ -2,3 +2,59 @@
     font-family: "OffBitTrial";
     src: url("../fonts/OffBitTrial-DotBold.ttf");
 }
+::-moz-selection {
+    color: aquamarine;
+}
+
+::selection {
+    color: bisque;
+}
+
+::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar */
+    background: transparent; /*optional make scrollbar*/
+}
+
+/* for IE and edge*/
+body {
+    -ms-overflow-style: none; /*IE 10+*/
+}
+
+html {
+    font-size: 11px;
+    scrollbar-width: none; /* firefox 64+ */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body a {
+    color: brown;
+    text-decoration: none;
+}
+
+body {
+    font-size: OffBitTrial;
+    font-size: 14px;
+}
+
+/* HEADER*/
+header {
+    position: sticky;
+    padding: var(--gap);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    top: 0;
+    background-color: blueviolet;
+    z-index: 1000;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
