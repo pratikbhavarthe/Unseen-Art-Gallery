@@ -396,3 +396,21 @@ header .menu-wrapper .menu {
     z-index: 20;
 }
 
+.images-wrapper .slider-wrapper figure {
+    width: 100%;
+}
+
+.images-wrapper .slider-wrapper figure img {
+    width: 100%;
+    height: auto;
+}
+
+.images-wrapper .slider-wrapper figure video {
+    width: 100%;
+    height: auto;
+}
+
+.images-wrapper .slider-wrapper section {
+    margin-bottom: 1rem;
+}
+
