@@ -1,6 +1,6 @@
 @font-face {
     font-family: "OffBitTrial";
-    src: url("../fonts/OffBitTrial-DotBold.ttf");
+    src: url("../fonts/OffBitTrial-DotBold.ttf")  format("ttf");
 }
 ::-moz-selection {
     color: aquamarine;
@@ -435,4 +435,195 @@ header .menu-wrapper .menu {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.project-description p {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;   
+    grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-column: 1;
+    -ms-grid-column-span: 19;
+    grid-area: 1 / 1 / 2 / 20;
+    padding-right: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+
+.show-text .project-description {
+    opacity: 1;
+}
+
+.logo-introduction {
+    width: 40vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.logo-introduction img {
+    width: 100%;
+}
+
+.images-wrapper .slider-wrapper section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+}
+
+  .images-wrapper .slider-wrapper section > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.language a {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.language:first-child::after {
+    content: "/";
+}
+
+.language:last-child {
+    padding-left: 0.25rem;
+}
+
+.language.active a {
+    color: black;
+}
+
+  .two-col .media > * {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.credits-wrapper {
+    overflow-x: scroll;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.2rem;
+    height: auto;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.credits {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+}
+
+.credits .credits-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.credits .credits-container .names-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.credits .credits-container .names-wrapper:last-child {
+    padding-right: 1rem;
+}
+
+.container {
+    position: fixed;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100vw;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-size: 17px;
+}
+
+.container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.container button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: default;
+    font-size: 17px;
+}
+
+.container .field:first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.container .control .button {
+    margin: 0;
+}
+
+.container .button::before {
+    display: none;
 }
